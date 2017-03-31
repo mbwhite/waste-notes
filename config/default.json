@@ -1,0 +1,25 @@
+{
+
+  "waste-notes" : {
+     "participantId" : "WebAppAdmin",
+     "participantPwd" :"DJY27pEnl16d",
+     "businessNetworkIdentifier" : "digitalproperty-network",
+     "connectionProfile" : "defaultProfile"
+  },
+
+  "fabric-composer": {
+	   "debug": {
+       "logger": "/home/matthew/github/waste-notes/winstonPapertrailInjector.js",
+       "config": {
+          "console": {
+            "enabledLevel": "info",
+            "alwaysLevel": "none"
+          },"papertrail": {
+            "enabledLevel": "silly",
+            "alwaysLevel": "info"
+            }
+          }
+		}
+	}
+
+}

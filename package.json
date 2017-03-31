@@ -1,0 +1,39 @@
+{
+  "name": "waste-notes",
+  "version": "0.0.1",
+  "description": "Water Transfer Notes",
+  "author": "mbw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'run the automated tests here'",
+    "setupHLF": "scripts/setup.sh",
+    "teardownHLF": "scripts/teardown.sh",
+    "deployNetwork": "composer archive create --archiveFile digitalproperty-network.bna --sourceType module --sourceName digitalproperty-network && composer network deploy --archiveFile  digitalproperty-network.bna  --enrollId WebAppAdmin --enrollSecret DJY27pEnl16d ",
+    "install": "npm run teardownHLF && npm run setupHLF && npm run deployNetwork"
+  },
+  "keywords": [
+    "blockchain",
+    "hyperledger",
+    "solutions",
+    "framework"
+  ],
+  "license": "Apache2",
+  "dependencies": {
+    "cli-table": "latest",
+    "composer-client": "^0.5.2-20170314224640",
+    "config": "^1.21.0",
+    "digitalproperty-network": "0.0.1",
+    "prettyoutput": "^1.1.1",
+    "shelljs": "^0.7.5",
+    "sprintf-js": "^1.0.3",
+    "winston": "^2.2.0",
+    "winston-loggly-bulk": "^1.4.1",
+    "winston-papertrail": "^1.0.4",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "gulp-file": "^0.3.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-vinyl-zip": "^1.4.0"
+  }
+}
